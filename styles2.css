@@ -108,13 +108,17 @@ body {
 }
 /* ... Inne style ... */
 
+.table-container {
+  width: 100%;
+  max-height: 400px; /* Maksymalna wysokość tabeli */
+  overflow: auto; /* Dodanie paska przewijania */
+}
+
 .advice-table {
   width: 100%;
-  margin-top: 2rem;
   border-collapse: collapse;
   background-color: var(--grayish-blue);
   border-radius: 0.625rem;
-  overflow: hidden;
 }
 
 .advice-table th,
@@ -141,9 +145,11 @@ body {
 }
 
 /* ... Inne style ... */
+
+
 .button {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: var(--neon-green);
   color: var(--dark-grayish-blue);
   font-size: 1rem;
