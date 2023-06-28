@@ -105,23 +105,54 @@ body {
   .container {
     max-width: 480px;
   }
-  .button-container {
-    margin-top: 8rem;
-    text-align: center;
-  }
-  
-  .button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--neon-green);
-    color: var(--dark-grayish-blue);
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 0.625rem;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .button:hover {
-    background-color: hsl(150, 59%, 54%);
-  }
 }
+/* ... Inne style ... */
+
+.advice-table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  background-color: var(--grayish-blue);
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.advice-table th,
+.advice-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-cyan);
+  text-align: left;
+}
+
+.advice-table th {
+  background-color: var(--dark-grayish-blue);
+  color: var(--neon-green);
+  text-transform: uppercase;
+}
+
+.advice-table td {
+  background-color: var(--light-cyan);
+  color: var(--grayish-blue);
+}
+
+.advice-table td:nth-child(odd) {
+  background-color: var(--grayish-blue);
+  color: var(--light-cyan);
+}
+
+/* ... Inne style ... */
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--neon-green);
+  color: var(--dark-grayish-blue);
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0.625rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: hsl(150, 59%, 54%);
+}
+
